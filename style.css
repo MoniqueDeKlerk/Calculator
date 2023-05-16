@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;1,700&family=Open+Sans:wght@300;400;500;700;800&family=Roboto:wght@400;700&family=Wallpoet&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --grey: #eeee;
+  --lightgrey: #aaaaaa;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: bisque;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+main {
+  text-align: center;
+  background-color: var(--grey);
+  padding: 5px;
+  border-radius: 5px;
+  border: solid black 1px;
+}
+
+#screen {
+  background-color: var(--lightgrey);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 1px;
+  margin: 3px;
+  font-family: 'Wallpoet', cursive;
+  border: solid black 1px;
+  padding: 10px;
+  width: 400px;
+  height: 75px;
+  font-size: 30px;
+}
+
+.top_btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.top_btns button {
+  font-family: inherit;
+  margin: 10px;
+  border-radius: 3px;
+  border: solid black 1px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 50px;
+}
+
+.top_btns button:active {
+  transform: scaleX(0.9);
+}
+.top_btns button:hover {
+  border: solid black 1px;
+}
+
+#clear {
+  background-color: #ffaaaa;
+}
+
+#delete {
+  background-color: #aaf;
+}
+
+.main_btns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.main_btns button {
+  font-family: inherit;
+  margin: 10px;
+  border-radius: 5px;
+  border: solid black 1px;
+  background-color: var(--lightgrey);
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.main_btns button:hover {
+  background-color: palegreen;
+  border: solid black 1px;
+}
+
+.main_btns button:active {
+  transform: scaleX(0.9);
+}
+
+footer h4 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.previous {
+  font-size: 20px;
+}
+
+.current {
+  font-size: 30px;
+}
